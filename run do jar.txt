@@ -1,1 +1,0 @@
- java -jar cartoes-onibus-api-0.0.1-SNAPSHOT.jar --spring.datasource.username={user} --spring.datasource.password={senha}
