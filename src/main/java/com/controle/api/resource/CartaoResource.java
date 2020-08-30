@@ -62,6 +62,8 @@ public class CartaoResource {
 
 		return cartaoRepository.findById(id).map(record -> {
 			record.setStatus(cartao.isStatus());
+			record.setNome(cartao.getNome());
+			record.setTipocartao(cartao.getTipocartao());
 
 			Cartao updated = cartaoRepository.save(record);
 			return ResponseEntity.ok().body(updated);
